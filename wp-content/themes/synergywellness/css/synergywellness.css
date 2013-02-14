@@ -1,0 +1,46 @@
+body {margin:0; padding:0; width:100%; height:100%; overflow:auto; min-width:1000px; color:#888888; font:100 17px/200% "Skia","Trebuchet-MS",sans-serif; background:url(../images/blue_noise.jpg) repeat;}
+a img {border:none;}
+ul {margin:0; padding:0; list-style:none;}
+.mid-cont {position:relative; width:900px; margin:auto;}
+a:hover {color:#00AEDB;}
+#loader {background:url("../images/loading.png") no-repeat scroll center center #FFFFFF; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 9000;}
+#main-cont {float:left; width:100%;}
+.page-img, .home-img {float:left; width:40%; height:100%;  background-size:cover !important;}
+.page-img img, .home-img img {width:100%; height:100%;}
+.home-img  {width:100% !important;}
+.content {float:left; width:60%; color:#666; text-align:center; font-family:"Crimson Text",Helvetica,Arial,sans-serif;}
+.content h2 {background:url("../images/border_lg.png") no-repeat center bottom; font-style:italic; font-size:28px; margin:0 auto 15px; opacity:0.9; padding:80px 0 10px; text-transform:uppercase; width:75%;}
+.content p {margin:0 auto; opacity:0.9; padding:0 0 15px; text-align:center; width:75%;}
+	
+/*HEADER*/
+#header {float:left; border-bottom: 2px solid #40B6DF;height:200px; padding:12px 0 20px; width:100%; background:#fff;}
+#header #gift-link {float:right; text-transform:uppercase; font-size:11px; margin-right:40px;}
+#header #logo {float:left; background:url(../images/logo.jpg) no-repeat; width:248px; height:154px; margin-left:325px;}
+#header #logo:hover {/*background-size:252px;*/transform: scale(1.02) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);}
+#header #nav {float:left; width:100%; margin-top:15px;}
+#header #nav li {float:left; margin:0 65px 0 90px;}
+#header #nav a {color:#888888; text-decoration:none; text-transform:uppercase;}
+#header #nav li a:hover, #header #nav .current-menu-item a, #header #nav .current-page-ancestor a, #header #gift-link:hover {color:#00AEDB;}
+#header #nav .sub-menu {display:none; left:260px; background: url("../images/blue_swatch.png") repeat scroll; position:absolute; width:155px; min-height:90px;}
+#header #nav .sub-menu li {float:left; width:100%; font-size:14px; margin:0; padding-left:15px;}
+#header #nav .sub-menu a {color:##8D8576; text-transform:capitalize;}
+
+
+/*HOMEPAGE*/
+.main-img {float:left; width:100%; height:400px; background-size:cover !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
