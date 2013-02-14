@@ -8,7 +8,7 @@ get_header(); ?>
 			$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
 			if ($thumbnail) (string)$thumbnail = $thumbnail[0];
 		} ?>
-<div class="home-img" style="background: url('<?php echo $thumbnail; ?>') no-repeat;"></div>
+<!-- <div class="home-img" style="background: url('<?php //echo $thumbnail; ?>') no-repeat;"></div> -->
 
 <!-- <?php the_post_thumbnail(); ?> -->
 

@@ -23,6 +23,8 @@
 <!--<![endif]-->
 <head>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.anystretch.min.js"></script>
+	
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <meta name="format-detection" content="telephone=no">
@@ -73,8 +75,8 @@
 ?>
 </head>
 
-<body <?php body_class(); ?>>
-	<div id="loader"></div>
+<body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
+	<?php if (is_front_page()) : ?><div id="loader"></div><?php endif; ?>
 	<div id="header">
 		<div id="gift-link" onclick="#">gift certificates</div>
 		<div class="mid-cont">
@@ -83,13 +85,10 @@
 		</div>
 	</div>
 	<div id="main-cont">
-		<?php if (!is_front_page()) : ?>
-			<?php $post_image_id = get_post_thumbnail_id($post_to_use->ID);
-					if ($post_image_id) {
-						$thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-full', false);
-						if ($thumbnail) (string)$thumbnail = $thumbnail[0];
-					} ?>
-			<div class="page-img"><?php the_post_thumbnail('full'); ?> </div>
+		<?php if (is_front_page()) : ?>
+			<div class="home_slide"></div>
+		<?php else: ?>
+			<div class="page-img" ></div>			
 		<?php endif; ?>
 
 				
