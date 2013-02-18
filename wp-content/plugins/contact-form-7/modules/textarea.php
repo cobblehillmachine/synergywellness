@@ -89,7 +89,7 @@ function wpcf7_textarea_shortcode_handler( $tag ) {
 	if ( $title_att )
 		$atts .= sprintf( ' title="%s"', trim( esc_attr( $title_att ) ) );
 
-	$html = '<textarea name="' . $name . '"' . $atts . '>' . esc_textarea( $value ) . '</textarea>';
+	$html = '<textarea class="form-input" default="' . esc_textarea( $value ) . '" name="' . $name . '"' . $atts . '>' . esc_textarea( $value ) . '</textarea>';
 
 	$html = '<span class="wpcf7-form-control-wrap ' . $name . '">' . $html . $validation_error . '</span>';
 

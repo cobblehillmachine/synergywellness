@@ -1,32 +1,59 @@
-
-
-
 $(document).ready(function() {
 	var pageH = $(document).height();
 	var pageImg = $('.page-img img');
-	homeSlide();
+	var bodyW = $('body').width();
+	setInputFieldFunctions();
 	showSubnav();
-	//resizeImg();
+	homeSlide();
 	resizePage();
 	callAnystretch();
+	//resizeImg();
 	$('#loader').css({height: pageH});
-	$('#loader').delay(1000).fadeOut();
-
+	$('#loader').delay(1000).fadeOut('slow');
+	if(bodyW < 1120) {
+		$('.content #swedish').css({marginLeft: 14 +'%'});
+	} 
+	else if(bodyW > 1120) {
+		$('.content #swedish').css({marginLeft: 25 +'%'});
+	}
 
 });
 
 $(window).resize(function() {
-	//resizeImg();
+	var bodyW = $('body').width();
 	resizePage();
 	callAnystretch();
-
+	if(bodyW < 1120) {
+		$('.content #swedish').css({marginLeft: 14 +'%'});
+	} 
+	else if(bodyW > 1120) {
+		$('.content #swedish').css({marginLeft: 25 +'%'});
+	}
+	//resizeImg();
 });
 
 $(window).load(function() {
 	homeSlide();
 	callAnystretch();
+	resizePage();
+	//resizeImg();
 });
 
+function setInputFieldFunctions(){
+$('.form-input').each(function(){
+     if($(this).val() == "")
+       $(this).val($(this).attr('default'));
+   })
+
+   $('.form-input').focus(function(){
+     if($(this).val() == $(this).attr('default') || $(this).val() == '')
+       $(this).val('');
+
+   }).blur(function() {
+     if($(this).val() == $(this).attr('default') || $(this).val() == '')
+       $(this).val($(this).attr('default'));
+   });
+}
 
 function showSubnav() {
 	$('#menu-item-34').live({
@@ -35,26 +62,11 @@ function showSubnav() {
 	});
 }
 
-// function setImgHeight() {
-// 	winH = $(window).height();
-// 	newH = winH - 234;
-// 	//$('.page-img img').css('height', newH);
-// 	$('#main-cont').css('height', newH);
-// 
-// }
-
-
-function resizeImg() {
-	var pageH = $(document).height();
-	var imgH = pageH - 234 +'px';
-	$('.page-img').css({height:imgH});
-}
-
 
 function resizePage() {
 	var contentHeight = $('.content').height(),
 		parentHeight = $('#main-cont').height(),
-		windowHeight = $(window).height() - 234;
+		windowHeight = $(document).height() - 254;
 	if (contentHeight > windowHeight) {
 		$('#main-cont').height(contentHeight);
 	}
@@ -78,22 +90,34 @@ function homeSlide() {
 	
 	// Call anystretch for the first time,
     // In this case, I'm settings speed of 500ms for a fadeIn effect between images.
-    $('.home_slide').anystretch(images[index], {speed: 100});
+    $('.home_slide').anystretch(images[index], {speed: 0});
     
     // Set an interval that increments the index and sets the new image
     // Note: The fadeIn speed set above will be inherited
     setInterval(function() {
         index = (index >= images.length - 1) ? 0 : index + 1;
-        $('.home_slide').anystretch(images[index], {speed: 500});
-    }, 5000);
+        $('.home_slide').anystretch(images[index], {speed: 1000});
+    }, 3500);
     var indexHeight = $(window).height();
-    $('#main').height(indexHeight - 234);
-    $('.home_slide').height(indexHeight - 234);
+    $('#main-cont').height(indexHeight - 254);
+    $('.home_slide').height(indexHeight - 254);
 }
 
 function callAnystretch() {
 	$('#bio .page-img').anystretch("/wp-content/themes/synergywellness/images/bio_slide.jpg", {speed: 0});
 	$('#pricing .page-img').anystretch("/wp-content/themes/synergywellness/images/pricing_slide.jpg", {speed: 0});
 	$('#contact .page-img').anystretch("/wp-content/themes/synergywellness/images/contact_slide.jpg", {speed: 0});
+	$('.treat_left_bg').anystretch("/wp-content/themes/synergywellness/images/treat_slide1.jpg", {speed: 0});
+	$('.treat_right_bg').anystretch("/wp-content/themes/synergywellness/images/treat_slide2.jpg", {speed: 0});
+	$('#swedish-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/swedish_slide.jpg", {speed: 0});
 	//$('#bio .page-img').anystretch("/wp-content/uploads/2013/02/bio_slide.jpg", {speed: 0});
 }
+
+function resizeImg() {
+var pageH = $(document).height();
+var imgH = pageH - 254 +'px';
+//var imgW = $('.page-img').width();
+
+$('.page-img').css({height:imgH});
+}
+

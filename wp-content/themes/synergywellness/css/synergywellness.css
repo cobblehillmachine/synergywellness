@@ -1,44 +1,65 @@
-body {margin:0; padding:0; width:100%; height:100%; overflow:auto; min-width:1000px; color:#888888; font:100 17px/200% "Skia","Trebuchet-MS",sans-serif; background:url(../images/blue_noise.jpg) repeat;}
+body {margin:0; padding:0; width:100%; height:100%; overflow:auto; font:normal 18px "adobe-caslon-pro"; font-weight:400; min-width:1000px; color:#888888;  background:url(../images/blue_noise.jpg) repeat;}
 a img {border:none;}
 ul {margin:0; padding:0; list-style:none;}
 .mid-cont {position:relative; width:900px; margin:auto;}
-a:hover {color:#00AEDB;}
+a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
 #loader {background:url("../images/loading.png") no-repeat scroll center center #FFFFFF; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 9000;}
 #main-cont {float:left; width:100%;}
 .page-img, .home-img {float:left; width:40%; height:100%;  background-size:cover !important;}
 .page-img img, .home-img img {width:100%; height:100%;}
 .home-img  {width:100% !important;}
-.content {float:left; width:60%; color:#666; text-align:center; font-family:"Crimson Text",Helvetica,Arial,sans-serif;}
-.content h2 {background:url("../images/border_lg.png") no-repeat center bottom; font-style:italic; font-size:28px; margin:0 auto 15px; opacity:0.9; padding:80px 0 10px; text-transform:uppercase; width:75%;}
-.content p {margin:0 auto; opacity:0.9; padding:0 0 15px; text-align:center; width:75%;}
+.content {float:left; width:60%; color:#666; text-align:center;}
+.content h2 {background:url("../images/border_lg.png") no-repeat center bottom; font-style:italic; font-size:26px; font-weight:normal; margin:0 auto 25px; opacity:0.9; padding:80px 0 10px; text-transform:uppercase; width:75%;}
+.content p {margin:0 auto; opacity:0.9; padding:0 0 15px; width:75%;}
+
+/*FONTS*/
+.futura-light {font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 300;}
+.futura-book {font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 400;}
 	
 /*HEADER*/
 #header {float:left; border-bottom: 2px solid #40B6DF;height:220px; padding:12px 0 20px; width:100%; background:#fff;}
 #header #gift-link {float:right; text-transform:uppercase; font-size:11px; margin-right:40px;}
 #header #logo {float:left; background:url(../images/logo.jpg) no-repeat; width:295px; height:154px; margin-left:325px; background-size:285px;}
 #header #logo:hover {/*background-size:252px;*/transform: scale(1.02) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);}
-#header #nav {float:left; width:100%; margin-top:30px;}
-#header #nav li {float:left; margin:0 65px 0 90px;}
-#header #nav a {color:#888888; text-decoration:none; text-transform:uppercase;}
+#header #nav {float:left; width:100%; margin-top:35px;}
+#header #nav li {float:left; margin:0 60px 0 90px;}
+#header #nav a {color:#888888; text-decoration:none; text-transform:uppercase; font:normal 17px "futura-pt"; font-weight: 400; letter-spacing:2px;}
 #header #nav li a:hover, #header #nav .current-menu-item a, #header #nav .current-page-ancestor a, #header #gift-link:hover {color:#00AEDB;}
-#header #nav .sub-menu {display:none; left:260px; background: url("../images/blue_swatch.png") repeat scroll; position:absolute; width:155px; min-height:90px;}
+#header #nav .sub-menu {display:none; left:260px; background: url("../images/blue_swatch.png") repeat scroll; position:absolute; width:180px; min-height:105px; padding-top:5px; z-index:10;}
 #header #nav .sub-menu li {float:left; width:100%; font-size:14px; margin:0; padding-left:15px;}
-#header #nav .sub-menu a {color:##8D8576; text-transform:capitalize;}
+#header #nav .sub-menu a {color:#8D8576; text-transform:capitalize; font-size:14px;}
 
 
 /*HOMEPAGE*/
 .main-img {float:left; width:100%; height:400px; background-size:cover !important;}
 
+/*PRICING*/
+#pricing .page-title, #pricing .content #schedule h2 {color:#fff; font-size:26px !important; padding-top:80px !important;}
+#pricing .content {line-height:20px;}
+#pricing .content h2 {font-size:18px; margin-bottom:15px; padding-top:35px;}
+#pricing  .pricing-cont {float:left; margin:auto; width:100%;}
+#swedish.pricing-cont,  #thai.pricing-cont {width:250px;}
+#pricing  #swedish.pricing-cont {margin-left:25%;}
 
 
+/*CONTACT*/
+/*#contact .page-img {width:60%;}
+#contact .content {width:40%;}
+*/
+#address-cont, #map-cont {width:50%; float:left; margin-top:50px;}
+#address-cont {margin-top:110px; line-height:30px;}
+#address-cont a {color:#00AEDB; text-decoration:none;}
+#address-cont a:hover {text-decoration:underline;}
+#map-wrap {background:#fff; padding:10px; border:#ccc; width:350px; height:250px;;}
+#map_canvas {float:left; width:350px; height:250px;}
+#form-cont, #signup-cont {float:left; width:100%; margin:auto; margin-top:50px;}
+#form-cont .input-cont {float:left;}
+#form-cont .input-cont input {float:left; height:45px; padding:5px 5px 0 10px; border:4px solid #fff; width:235px; background:#F0DDDD; margin-right:20px; border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;}
 
-
-
-
-
-
-
-
+/*TREATMENT*/
+#treatment .treat_left_bg {border-right:1px solid #FFFFFF; float:left; height:100%; margin:0 0 0 -1px; width:50%; text-align:center;}
+#treatment .treat_right_bg {float:right; height:100%; width:50%; text-align:center;}
+#treatment #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:36px; display:inline-block; margin-top:48%; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
 
 
 

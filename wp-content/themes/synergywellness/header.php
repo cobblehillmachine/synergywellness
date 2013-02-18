@@ -22,6 +22,8 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+	<script type="text/javascript" src="//use.typekit.net/kcy3ghq.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.anystretch.min.js"></script>
 	
@@ -87,8 +89,12 @@
 	<div id="main-cont">
 		<?php if (is_front_page()) : ?>
 			<div class="home_slide"></div>
+		
+		<?php elseif (is_page(11)) : ?>	
+			<div class="treat_left_bg"><a href="/swedish-massage">Swedish Massage</a></div>
+			<div class="treat_right_bg"><a href="/thai-massage">Thai Massage</a></div>
 		<?php else: ?>
-			<div class="page-img" ></div>			
+			<div class="page-img" ><!-- <?php// the_post_thumbnail('full'); ?> --></div>			
 		<?php endif; ?>
 
 				
