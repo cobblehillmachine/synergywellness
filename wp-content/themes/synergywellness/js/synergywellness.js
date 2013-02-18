@@ -2,6 +2,8 @@ $(document).ready(function() {
 	var pageH = $(document).height();
 	var pageImg = $('.page-img img');
 	var bodyW = $('body').width();
+	window.scrollTo(0, 1);
+	centerItem('#gift-form', 350, 700);
 	setInputFieldFunctions();
 	showSubnav();
 	homeSlide();
@@ -16,6 +18,7 @@ $(document).ready(function() {
 	else if(bodyW > 1120) {
 		$('.content #swedish').css({marginLeft: 25 +'%'});
 	}
+	
 
 });
 
@@ -23,12 +26,13 @@ $(window).resize(function() {
 	var bodyW = $('body').width();
 	resizePage();
 	callAnystretch();
-	if(bodyW < 1120) {
+	if(bodyW < 1150) {
 		$('.content #swedish').css({marginLeft: 14 +'%'});
 	} 
-	else if(bodyW > 1120) {
+	else if(bodyW > 1150) {
 		$('.content #swedish').css({marginLeft: 25 +'%'});
 	}
+	centerItem('#gift-form', 350, 700);
 	//resizeImg();
 });
 
@@ -97,7 +101,7 @@ function homeSlide() {
     setInterval(function() {
         index = (index >= images.length - 1) ? 0 : index + 1;
         $('.home_slide').anystretch(images[index], {speed: 1000});
-    }, 3500);
+    }, 5000);
     var indexHeight = $(window).height();
     $('#main-cont').height(indexHeight - 254);
     $('.home_slide').height(indexHeight - 254);
@@ -110,6 +114,9 @@ function callAnystretch() {
 	$('.treat_left_bg').anystretch("/wp-content/themes/synergywellness/images/treat_slide1.jpg", {speed: 0});
 	$('.treat_right_bg').anystretch("/wp-content/themes/synergywellness/images/treat_slide2.jpg", {speed: 0});
 	$('#swedish-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/swedish_slide.jpg", {speed: 0});
+	$('#thai-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/thai_slide.jpg", {speed: 0});
+	$('#exfoliation .page-img').anystretch("/wp-content/themes/synergywellness/images/exfoliation_slide.jpg", {speed: 0});
+	$('#colon-hydrotherapy .page-img').anystretch("/wp-content/themes/synergywellness/images/colon_slide.jpg", {speed: 0});
 	//$('#bio .page-img').anystretch("/wp-content/uploads/2013/02/bio_slide.jpg", {speed: 0});
 }
 
@@ -120,4 +127,28 @@ var imgH = pageH - 254 +'px';
 
 $('.page-img').css({height:imgH});
 }
+
+function showGiftform() {
+	var docH = $(document).height();
+	$('.overlay').css({height: docH});
+	$('.overlay').fadeIn();
+	$('#gift-form').fadeIn();
+}
+
+function hideGiftform() {
+	$('.overlay').fadeOut();
+	$('#gift-form').fadeOut();
+}
+
+function centerItem(item,iWidth,iHeight){  
+   windowWidth = $(window).width();
+   windowHeight = $(window).height();
+   var w = windowWidth - iWidth; 
+   var h = windowHeight - iHeight;
+   $(item).css({
+       'left': w/2,
+       'top':h/2
+   });   
+}
+
 

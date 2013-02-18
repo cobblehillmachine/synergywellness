@@ -1,6 +1,7 @@
-body {margin:0; padding:0; width:100%; height:100%; overflow:auto; font:normal 18px "adobe-caslon-pro"; font-weight:400; min-width:1000px; color:#888888;  background:url(../images/blue_noise.jpg) repeat;}
+body {margin:0; padding:0; width:100%; height:100%; overflow:auto; font:normal 18px "adobe-caslon-pro"; font-weight:400; min-width:1005px; color:#888888;  background:url(../images/blue_noise.jpg) repeat;}
 a img {border:none;}
 ul {margin:0; padding:0; list-style:none;}
+input {-webkit-appearance: none;}
 .mid-cont {position:relative; width:900px; margin:auto;}
 a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
 #loader {background:url("../images/loading.png") no-repeat scroll center center #FFFFFF; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 9000;}
@@ -9,8 +10,10 @@ a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
 .page-img img, .home-img img {width:100%; height:100%;}
 .home-img  {width:100% !important;}
 .content {float:left; width:60%; color:#666; text-align:center;}
-.content h2 {background:url("../images/border_lg.png") no-repeat center bottom; font-style:italic; font-size:26px; font-weight:normal; margin:0 auto 25px; opacity:0.9; padding:80px 0 10px; text-transform:uppercase; width:75%;}
+.content h2 {background:url("../images/border_lg.png") no-repeat center bottom; font-style:italic; font-size:26px; font-weight:normal; display:inline-block; margin:0px auto 25px; opacity:0.9; filter:opacity(90); padding-bottom:10px; text-transform:uppercase; width:75%;}
 .content p {margin:0 auto; opacity:0.9; padding:0 0 15px; width:75%;}
+.content h3 {text-transform:uppercase; font-weight:normal;}
+#bio h2 {margin-top:80px;}
 
 /*FONTS*/
 .futura-light {font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 300;}
@@ -18,7 +21,7 @@ a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
 	
 /*HEADER*/
 #header {float:left; border-bottom: 2px solid #40B6DF;height:220px; padding:12px 0 20px; width:100%; background:#fff;}
-#header #gift-link {float:right; text-transform:uppercase; font-size:11px; margin-right:40px;}
+#header #gift-link {float:right; text-transform:uppercase; font-size:11px; margin-right:40px; cursor:pointer;}
 #header #logo {float:left; background:url(../images/logo.jpg) no-repeat; width:295px; height:154px; margin-left:325px; background-size:285px;}
 #header #logo:hover {/*background-size:252px;*/transform: scale(1.02) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);}
 #header #nav {float:left; width:100%; margin-top:35px;}
@@ -32,36 +35,109 @@ a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
 
 /*HOMEPAGE*/
 .main-img {float:left; width:100%; height:400px; background-size:cover !important;}
+#site-credit {position:absolute; bottom:20px; right:50px; color:#fff; text-decoration:none; text-shadow:0 1px 2px #000000; font-size:16px;}
+#site-credit:hover {color:#EFEFEF;}
 
 /*PRICING*/
-#pricing .page-title, #pricing .content #schedule h2 {color:#fff; font-size:26px !important; padding-top:80px !important;}
+#pricing .page-title, #pricing .content #schedule h2 {color:#fff; font-size:26px !important; padding-top:0px !important; margin-top:45px;}
 #pricing .content {line-height:20px;}
-#pricing .content h2 {font-size:18px; margin-bottom:15px; padding-top:35px;}
-#pricing  .pricing-cont {float:left; margin:auto; width:100%;}
+#pricing .content h2 {font-size:18px; margin-bottom:15px;}
+#pricing  .pricing-cont {float:left; margin:auto; width:100%; margin-bottom:20px}
 #swedish.pricing-cont,  #thai.pricing-cont {width:250px;}
 #pricing  #swedish.pricing-cont {margin-left:25%;}
+#pricing #form-cont {margin-bottom:40px;}
 
 
 /*CONTACT*/
-/*#contact .page-img {width:60%;}
-#contact .content {width:40%;}
-*/
-#address-cont, #map-cont {width:50%; float:left; margin-top:50px;}
+#address-cont, #map-cont {width:45%; float:left; margin-top:50px;}
+#map-cont {width:55%;}
 #address-cont {margin-top:110px; line-height:30px;}
 #address-cont a {color:#00AEDB; text-decoration:none;}
 #address-cont a:hover {text-decoration:underline;}
-#map-wrap {background:#fff; padding:10px; border:#ccc; width:350px; height:250px;;}
-#map_canvas {float:left; width:350px; height:250px;}
-#form-cont, #signup-cont {float:left; width:100%; margin:auto; margin-top:50px;}
-#form-cont .input-cont {float:left;}
-#form-cont .input-cont input {float:left; height:45px; padding:5px 5px 0 10px; border:4px solid #fff; width:235px; background:#F0DDDD; margin-right:20px; border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;}
+#map-wrap {background:#fff; padding:10px; border:#ccc; width:325px; height:225px;;}
+#map_canvas {float:left; width:325px; height:225px;}
+#signup-cont {margin-bottom:35px !important;}
+#signup-cont h3 {font-size:14px; margin:auto; width:75%; text-align:left; margin-bottom:12px;}
+#signup-cont #mc_signup_form {background:none; border:none; padding:0; width:75%; margin:auto;}
+#signup-cont .mc_signup_submit {float:left; margin-top:7px;}
+#signup-cont #mc_message {position:absolute; text-align:left; font:normal 14px "adobe-caslon-pro"; margin:65px 0 0 5px;}
+#signup-cont .mc_success_msg {margin:-45px 0 0 10px; color:#00AEDB !important;}
 
 /*TREATMENT*/
 #treatment .treat_left_bg {border-right:1px solid #FFFFFF; float:left; height:100%; margin:0 0 0 -1px; width:50%; text-align:center;}
 #treatment .treat_right_bg {float:right; height:100%; width:50%; text-align:center;}
 #treatment #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:36px; display:inline-block; margin-top:48%; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
 
+.treat-links-cont {float:left; margin:50px 0 70px 0; width:100%;}
+.treat-links-cont li {display:inline;}
+.treat-links-cont a {margin-right:30px; text-transform:uppercase; color:#888; text-decoration:none;}
+.treat-links-cont a:hover, .treat-links-cont .current-menu-item a {color:#fff;}
+
+#colon-hydrotherapy .more-links-cont a {color:#666; text-decoration:none;}	
+#colon-hydrotherapy .more-links-cont a:hover {color:#00AEDB;}
+#colon-hydrotherapy #quote-cont {padding:30px 40px; background:#9ccfdb; width:85%; margin:0 auto 25px; text-align:left;}
+#colon-hydrotherapy #quote-cont p {font-size:18px; font-style:italic; width:100%;}
+#colon-hydrotherapy #quote-cont span {margin:auto; width:100%;}
+
+/*FORM*/
+#form-cont, #signup-cont {float:left; width:100%; margin:auto; margin-top:50px;}
+#form-cont .input-cont {float:left;}
+#form-cont .input-cont p {margin:0;}
+.form-input, #form-cont .input-cont textarea {float:left; height:45px; padding:5px 5px 0 10px; border:4px solid #EBEBEB; width:200px; background:#F0DDDD; margin:0 15px 20px 0; 
+	border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px; color:#666; font:normal 14px "adobe-caslon-pro";}
+#form-cont .input-cont textarea {resize:none; width:438px; height:120px; padding-top:15px;}
+.submit-btn {float:left; width:100%; text-align:left;}
+.submit-btn input, .mc_signup_submit input {width:100px; border:none; padding:12px 0; color:#666; font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 400; font-size:13px; 
+border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px; background:#EBEBEB; cursor:pointer;}
+#form-cont form {width:75%; margin:auto;}
+.form-label {float:left; text-transform:uppercase; font-size:14px; font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 400; margin-left:2px;}
+
+/*GIFT CERTIFICATE*/
+#gift-form {display:none; position:absolute; margin:auto; z-index:100; width:250px; background:#fff; padding:40px; border:1px solid #ccc; border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;}
+.overlay {position:absolute; width:100%; height:100%; top:0; left:0; background:#fff; opacity:.7; filter:alpha(opacity=70); z-index:50; display:none;}
+#close {position:absolute; right:12px; top:12px; font:normal 12px Arial; padding:2px 5px; border:1px solid #ccc; cursor:pointer;}
+#gift-form .info {font-size:14px; margin-bottom:15px;}
+
+
+@media screen and (max-device-width: 320px) {
+body {min-height:1200px;}
+#header #nav li {margin-left:80px;}
+#loader {display:none !important;}
+#pricing #swedish.pricing-cont {margin-left:7% !important;}
+.home_slide, .home_slide img {height:1000px !important;}
+#site-credit {display:none;}
+#map-wrap, #map_canvas {width:300px; height:200px;}
+.overlay {width:1005px;}
+#gift-form {top:100px !important; left:350px !important;}
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+body {min-height:700px;}
+#header #nav li {margin-left:80px;}
+#loader {display:none !important;}
+#pricing #swedish.pricing-cont {margin-left:7% !important;}
+#map-wrap, #map_canvas {width:300px; height:200px;}
+.overlay {width:1005px;}
+#gift-form {top:25px !important; left:350px !important;}
+.home_slide, .home_slide img {height:650px !important;}
+#site-credit {display:none;}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+body {min-height:1200px;}
+#header #nav li {margin-left:80px;}
+#loader {display:none !important;}
+#pricing #swedish.pricing-cont {margin-left:7% !important;}
+.home_slide, .home_slide img {height:1000px !important;}
+#site-credit {display:none;}
+#map-wrap, #map_canvas {width:300px; height:200px;}
+.overlay {width:1005px;}
+#gift-form {top:100px !important; left:350px !important;}
+}
 
 
 
-	
+
+
+

@@ -5,40 +5,41 @@ div.wpcf7 {
 
 div.wpcf7-response-output {
 	margin: 2em 0.5em 1em;
-	padding: 0.2em 1em;
+	padding:0;
+	float:left;
+
 }
 
 div.wpcf7-mail-sent-ok {
-	border: 2px solid #398f14;
+	font-size:14px;
 }
 
 div.wpcf7-mail-sent-ng {
-	border: 2px solid #ff0000;
+	
 }
 
 div.wpcf7-spam-blocked {
-	border: 2px solid #ffa500;
+
 }
 
 div.wpcf7-validation-errors {
-	border: 2px solid #f7e700;
+float:left; font:normal 16px "adobe-caslon-pro"; display:none !important;
 }
+
+#gift-form span.wpcf7-not-valid-tip { float:left; margin:-58px 0 0 15px; position:relative;}
 
 span.wpcf7-form-control-wrap {
 	position: relative;
 }
 
 span.wpcf7-not-valid-tip {
-	position: absolute;
-	top: 20%;
-	left: 20%;
+	position:absolute; margin:40px 0 0 -110px; width:200px;
 	z-index: 100;
-	background: #fff;
-	border: 1px solid #ff0000;
 	font-size: 10pt;
-	width: 280px;
-	padding: 2px;
+
 }
+
+.your-message span.wpcf7-not-valid-tip {margin-left: -210px;}
 
 span.wpcf7-not-valid-tip-no-ajax {
 	color: #f00;

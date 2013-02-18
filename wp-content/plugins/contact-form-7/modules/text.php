@@ -120,11 +120,12 @@ add_filter( 'wpcf7_validate_email*', 'wpcf7_text_validation_filter', 10, 2 );
 function wpcf7_text_validation_filter( $result, $tag ) {
 	$type = $tag['type'];
 	$name = $tag['name'];
+	//$default = $tag['default'];
 
 	$_POST[$name] = trim( strtr( (string) $_POST[$name], "\n", " " ) );
 
-	if ( 'text*' == $type ) {
-		if ( '' == $_POST[$name] ) {
+	if ( 'text*' == $type) {
+		if ( '' == $_POST[$name]){
 			$result['valid'] = false;
 			$result['reason'][$name] = wpcf7_get_message( 'invalid_required' );
 		}

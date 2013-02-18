@@ -80,7 +80,7 @@
 <body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
 	<?php if (is_front_page()) : ?><div id="loader"></div><?php endif; ?>
 	<div id="header">
-		<div id="gift-link" onclick="#">gift certificates</div>
+		<div id="gift-link" onclick="showGiftform();">gift certificates</div>
 		<div class="mid-cont">
 			<a href="/" id="logo"></a>
 			<div id="nav"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>
@@ -98,4 +98,11 @@
 		<?php endif; ?>
 
 				
-
+<div id="gift-form">
+	<div id="close" onclick="hideGiftform();" >X</div>
+	<div class="info">
+		Please fill out the information below and Jennifer will get in touch with you within 24 hours to deliver the gift certificate.
+	</div>
+	<?php echo do_shortcode('[contact-form-7 id="97" title="Gift certificate"]'); ?>
+</div>
+<div class="overlay"></div>
