@@ -37,7 +37,6 @@ $(window).resize(function() {
 });
 
 $(window).load(function() {
-	homeSlide();
 	callAnystretch();
 	resizePage();
 	//resizeImg();
@@ -100,8 +99,8 @@ function homeSlide() {
     // Note: The fadeIn speed set above will be inherited
     setInterval(function() {
         index = (index >= images.length - 1) ? 0 : index + 1;
-        $('.home_slide').anystretch(images[index], {speed: 1000});
-    }, 5000);
+        $('.home_slide').anystretch(images[index], {speed: 2000});
+    }, 4000);
     var indexHeight = $(window).height();
     $('#main-cont').height(indexHeight - 254);
     $('.home_slide').height(indexHeight - 254);
