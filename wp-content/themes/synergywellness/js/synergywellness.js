@@ -112,6 +112,8 @@ function callAnystretch() {
 	$('#contact .page-img').anystretch("/wp-content/themes/synergywellness/images/contact_slide.jpg", {speed: 0});
 	$('.treat_left_bg').anystretch("/wp-content/themes/synergywellness/images/treat_slide1.jpg", {speed: 0});
 	$('.treat_right_bg').anystretch("/wp-content/themes/synergywellness/images/treat_slide2.jpg", {speed: 0});
+	$('.treat_bottom_left_bg').anystretch("/wp-content/themes/synergywellness/images/exfoliation_slide.jpg", {speed: 0});
+	$('.treat_bottom_right_bg').anystretch("/wp-content/themes/synergywellness/images/new_colon.jpg", {speed: 0});
 	$('#swedish-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/swedish_slide.jpg", {speed: 0});
 	$('#thai-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/thai_slide.jpg", {speed: 0});
 	$('#exfoliation .page-img').anystretch("/wp-content/themes/synergywellness/images/exfoliation_slide.jpg", {speed: 0});

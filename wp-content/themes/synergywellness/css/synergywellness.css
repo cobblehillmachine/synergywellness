@@ -64,9 +64,11 @@ a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
 #signup-cont .mc_success_msg {margin:-45px 0 0 10px; color:#00AEDB !important;}
 
 /*TREATMENT*/
-#treatment .treat_left_bg {border-right:1px solid #FFFFFF; float:left; height:100%; margin:0 0 0 -1px; width:50%; text-align:center;}
-#treatment .treat_right_bg {float:right; height:100%; width:50%; text-align:center;}
-#treatment #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:36px; display:inline-block; margin-top:48%; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
+#treatment .treat_left_bg {border-right:1px solid #FFFFFF; float:left; height:50%; margin:0 0 0 -1px; width:50%; text-align:center;}
+#treatment .treat_right_bg {float:right; height:50%; width:50%; text-align:center;}
+#treatment .treat_bottom_left_bg {border-right:1px solid #FFFFFF; float:left; height:50%; margin:0 0 0 -1px; width:50%; text-align:center;}
+#treatment .treat_bottom_right_bg {float:right; height:50%; width:50%; text-align:center;}
+#treatment #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:36px; display:inline-block; margin-top:22%; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
 
 .treat-links-cont {float:left; margin:50px 0 70px 0; width:100%;}
 .treat-links-cont li {display:inline;}

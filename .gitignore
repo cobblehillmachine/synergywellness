@@ -21,6 +21,7 @@ tmp
 tmp/**/*
 wp-content/uploads/*
 wp-content/gallery/*
+wp-config.php
 
 vendor/cache
 
