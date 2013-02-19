@@ -11,7 +11,7 @@
 ?>
 	</div>
 	<?php if (is_front_page()) : ?>
-	<a id="site-credit" href="http://www.cobblehilldigital.com" target="_blank">Site by Cobble Hill</a>
+	<a id="site-credit" href="http://cobblehilldigital.com" target="_blank">Site by Cobble Hill</a>
 	<?php endif; ?>
 
 <?php wp_footer(); ?>

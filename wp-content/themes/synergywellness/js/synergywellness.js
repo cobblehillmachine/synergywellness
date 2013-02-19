@@ -146,7 +146,7 @@ function centerItem(item,iWidth,iHeight){
    var h = windowHeight - iHeight;
    $(item).css({
        'left': w/2,
-       'top':h/2
+       //'top':h/2
    });   
 }
 
