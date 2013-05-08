@@ -93,7 +93,7 @@
 		<?php elseif (is_page(11)) : ?>	
 			<div class="treat_left_bg"><a href="/swedish-massage">Swedish Massage</a></div>
 			<div class="treat_right_bg"><a href="/thai-massage">Thai Massage</a></div>
-			<div class="treat_bottom_left_bg"><a href="/exfoliation">Exfoliation</a></div>
+			<div class="treat_bottom_left_bg"><a href="/sugaring">Sugaring and Facials</a></div>
 			<div class="treat_bottom_right_bg"><a href="/colon-hydrotherapy">Colon Hydrotherapy</a></div>
 		<?php else: ?>
 			<div class="page-img" ><!-- <?php// the_post_thumbnail('full'); ?> --></div>			

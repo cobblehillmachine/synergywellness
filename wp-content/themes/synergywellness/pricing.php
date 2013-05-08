@@ -5,8 +5,8 @@
 get_header(); ?>
 
 <div class="content">
-	<h2 class="page-title"><?php the_title(); ?></h2>
-	<?php $subs = new WP_Query( array( 'post_parent' => $post->ID, 'post_type' => 'page', 'order' => 'ASC', 'posts_per_page' => 20 ));
+	<div class="page-title"><?php the_title(); ?></div>
+	<?php $subs = new WP_Query( array( 'post_parent' => $post->ID, 'post_type' => 'page', 'orderby' => 'menu_order', 'order' => 'ASC', 'posts_per_page' => 20 ));
 	    if( $subs->have_posts() ) : while( $subs->have_posts() ) : $subs->the_post(); ?>
 
 			<div id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>" class="pricing-cont">

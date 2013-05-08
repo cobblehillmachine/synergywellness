@@ -12,12 +12,12 @@ $(document).ready(function() {
 	//resizeImg();
 	$('#loader').css({height: pageH});
 	$('#loader').delay(1000).fadeOut('slow');
-	if(bodyW < 1120) {
-		$('.content #swedish').css({marginLeft: 14 +'%'});
-	} 
-	else if(bodyW > 1120) {
-		$('.content #swedish').css({marginLeft: 25 +'%'});
-	}
+	// if(bodyW < 1120) {
+	// 	$('.content #swedish').css({marginLeft: 14 +'%'});
+	// } 
+	// else if(bodyW > 1120) {
+	// 	$('.content #swedish').css({marginLeft: 25 +'%'});
+	// }
 	
 
 });
@@ -26,12 +26,12 @@ $(window).resize(function() {
 	var bodyW = $('body').width();
 	resizePage();
 	callAnystretch();
-	if(bodyW < 1150) {
-		$('.content #swedish').css({marginLeft: 14 +'%'});
-	} 
-	else if(bodyW > 1150) {
-		$('.content #swedish').css({marginLeft: 25 +'%'});
-	}
+	// if(bodyW < 1150) {
+	// 	$('.content #swedish').css({marginLeft: 14 +'%'});
+	// } 
+	// else if(bodyW > 1150) {
+	// 	$('.content #swedish').css({marginLeft: 25 +'%'});
+	// }
 	centerItem('#gift-form', 350, 700);
 	//resizeImg();
 });
@@ -116,7 +116,7 @@ function callAnystretch() {
 	$('.treat_bottom_right_bg').anystretch("/wp-content/themes/synergywellness/images/new_colon.jpg", {speed: 0});
 	$('#swedish-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/swedish_slide.jpg", {speed: 0});
 	$('#thai-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/thai_slide.jpg", {speed: 0});
-	$('#exfoliation .page-img').anystretch("/wp-content/themes/synergywellness/images/exfoliation_slide.jpg", {speed: 0});
+	$('#sugaring .page-img').anystretch("/wp-content/themes/synergywellness/images/exfoliation_slide.jpg", {speed: 0});
 	$('#colon-hydrotherapy .page-img').anystretch("/wp-content/themes/synergywellness/images/colon_slide.jpg", {speed: 0});
 	//$('#bio .page-img').anystretch("/wp-content/uploads/2013/02/bio_slide.jpg", {speed: 0});
 }
