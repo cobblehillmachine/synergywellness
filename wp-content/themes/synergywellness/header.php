@@ -81,6 +81,7 @@
 	<?php if (is_front_page()) : ?><div id="loader"></div><?php endif; ?>
 	<div id="header">
 		<div id="gift-link" onclick="showGiftform();">gift certificates</div>
+		<a id="signup-link" href="/contact/#mc_signup">Signup for our Newsletter</a>
 		<div class="mid-cont">
 			<a href="/" id="logo"></a>
 			<div id="nav"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>

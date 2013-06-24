@@ -13,7 +13,7 @@ a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
 .content h2, #pricing .page-title {background:url("../images/border_lg.png") no-repeat center bottom; font-style:italic; font-size:26px; font-weight:normal; display:inline-block; margin:0px auto 25px; opacity:0.9; filter:opacity(90); padding-bottom:10px; text-transform:uppercase; width:75%;}
 .content p {margin:0 auto; opacity:0.9; padding:0 0 15px; width:75%;}
 .content h3 {text-transform:uppercase; font-weight:normal;}
-#bio h2 {margin-top:80px;}
+#practitioners h2 {margin-top:80px;}
 
 /*FONTS*/
 .futura-light {font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 300;}
@@ -21,11 +21,11 @@ a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
 	
 /*HEADER*/
 #header {float:left; border-bottom: 2px solid #40B6DF;height:220px; padding:12px 0 20px; width:100%; background:#fff;}
-#header #gift-link {float:right; text-transform:uppercase; font-size:11px; margin-right:40px; cursor:pointer;}
+#header #gift-link, #header #signup-link {float:right; text-transform:uppercase; font-size:11px; margin-right:40px; cursor:pointer; text-decoration:none; color:#888888;}
 #header #logo {float:left; background:url(../images/logo.jpg) no-repeat; width:295px; height:154px; margin-left:325px; background-size:285px;}
 #header #logo:hover {/*background-size:252px;*/transform: scale(1.02) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);}
 #header #nav {float:left; width:100%; margin-top:35px;}
-#header #nav li {float:left; margin:0 60px 0 90px;}
+#header #nav li {float:left; margin:0 40px 0 80px;}
 #header #nav a {color:#888888; text-decoration:none; text-transform:uppercase; font:normal 17px "futura-pt"; font-weight: 400; letter-spacing:2px;}
 #header #nav li a:hover, #header #nav .current-menu-item a, #header #nav .current-page-ancestor a, #header #gift-link:hover {color:#00AEDB;}
 #header #nav .sub-menu {display:none; left:260px; background: url("../images/blue_swatch.png") repeat scroll; position:absolute; width:180px; min-height:105px; padding-top:5px; z-index:10;}

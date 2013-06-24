@@ -21,7 +21,10 @@ tmp
 tmp/**/*
 wp-content/uploads/*
 wp-content/gallery/*
+sql/*
+sql/
 wp-config.php
+.htpasswd
 
 vendor/cache
 

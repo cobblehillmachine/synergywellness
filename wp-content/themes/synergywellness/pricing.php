@@ -16,7 +16,7 @@ get_header(); ?>
 
 
 	<?php endwhile; endif; wp_reset_postdata(); ?>
-	<div id="form-cont"><?php echo do_shortcode('[contact-form-7 id="76" title="Contact form 1"]'); ?></div>
+	<!-- <div id="form-cont"><?php //echo do_shortcode('[contact-form-7 id="76" title="Contact form 1"]'); ?></div> -->
 </div>
 
 <?php get_footer(); ?>
