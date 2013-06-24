@@ -116,7 +116,7 @@ function callAnystretch() {
 	$('.treat_bottom_right_bg').anystretch("/wp-content/themes/synergywellness/images/new_colon.jpg", {speed: 0});
 	$('#swedish-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/swedish_slide.jpg", {speed: 0});
 	$('#thai-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/thai_slide.jpg", {speed: 0});
-	$('#sugaring-&-facials .page-img').anystretch("/wp-content/themes/synergywellness/images/sugaring.jpg", {speed: 0});
+	$('.page-id-16 .page-img').anystretch("/wp-content/themes/synergywellness/images/sugaring.jpg", {speed: 0});
 	$('#colon-hydrotherapy .page-img').anystretch("/wp-content/themes/synergywellness/images/colon_slide.jpg", {speed: 0});
 	//$('#practitioners .page-img').anystretch("/wp-content/uploads/2013/02/bio_slide.jpg", {speed: 0});
 }
