@@ -3,7 +3,8 @@ a img {border:none;}
 ul {margin:0; padding:0; list-style:none;}
 input {-webkit-appearance: none;}
 .mid-cont {position:relative; width:900px; margin:auto;}
-a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
+a {color:#00AEDB; text-decoration:none;}
+a:hover, #treatment #main-cont a:hover {text-decoration:underline;}
 #loader {background:url("../images/loading.png") no-repeat scroll center center #FFFFFF; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 9000;}
 #main-cont {float:left; width:100%;}
 .page-img, .home-img {float:left; width:40%; height:100%;  background-size:cover !important;}
@@ -76,7 +77,7 @@ a:hover, #treatment #main-cont a:hover {color:#00AEDB;}
 .treat-links-cont a {margin-right:30px; text-transform:uppercase; color:#888; text-decoration:none;}
 .treat-links-cont a:hover, .treat-links-cont .current-menu-item a {color:#fff;}
 #menu-treatments li a {margin-right:10px;}
-#colon-hydrotherapy .more-links-cont a {color:#666; text-decoration:none;}	
+/*#colon-hydrotherapy .more-links-cont a {color:#666; text-decoration:none;}	*/
 #colon-hydrotherapy .more-links-cont a:hover {color:#00AEDB;}
 #colon-hydrotherapy #quote-cont {padding:30px 40px; background:#9ccfdb; width:85%; margin:0 auto 25px; text-align:left;}
 #colon-hydrotherapy #quote-cont p {font-size:18px; font-style:italic; width:100%;}
