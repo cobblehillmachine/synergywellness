@@ -1,6 +1,6 @@
 <?php
 
-// Template Name: Treatment
+// Template Name: Offerings
 
 get_header(); ?>
 

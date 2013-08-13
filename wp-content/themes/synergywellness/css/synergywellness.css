@@ -4,7 +4,7 @@ ul {margin:0; padding:0; list-style:none;}
 input {-webkit-appearance: none;}
 .mid-cont {position:relative; width:900px; margin:auto;}
 a {color:#00AEDB; text-decoration:none;}
-a:hover, #treatment #main-cont a:hover {text-decoration:underline;}
+a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 #loader {background:url("../images/loading.png") no-repeat scroll center center #FFFFFF; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 9000;}
 #main-cont {float:left; width:100%;}
 .page-img, .home-img {float:left; width:40%; height:100%;  background-size:cover !important;}
@@ -29,7 +29,7 @@ a:hover, #treatment #main-cont a:hover {text-decoration:underline;}
 #header #nav li {float:left; margin:0 40px 0 80px;}
 #header #nav a {color:#888888; text-decoration:none; text-transform:uppercase; font:normal 17px "futura-pt"; font-weight: 400; letter-spacing:2px;}
 #header #nav li a:hover, #header #nav .current-menu-item a, #header #nav .current-page-ancestor a, #header #gift-link:hover {color:#00AEDB;}
-#header #nav .sub-menu {display:none; left:260px; background: url("../images/blue_swatch.png") repeat scroll; position:absolute; width:180px; min-height:105px; padding-top:5px; z-index:10;}
+#header #nav .sub-menu {display:none; left:260px; background: url("../images/blue_swatch.png") repeat scroll; position:absolute; width:180px; padding:5px 0; z-index:10;}
 #header #nav .sub-menu li {float:left; width:100%; font-size:14px; margin:0; padding-left:15px;}
 #header #nav .sub-menu a {color:#8D8576; text-transform:capitalize; font-size:14px;}
 
@@ -66,11 +66,10 @@ a:hover, #treatment #main-cont a:hover {text-decoration:underline;}
 #signup-cont .mc_success_msg {margin:-45px 0 0 10px; color:#00AEDB !important;}
 
 /*TREATMENT*/
-#treatment .treat_left_bg {border-right:1px solid #FFFFFF; float:left; height:50%; margin:0 0 0 -1px; width:50%; text-align:center;}
-#treatment .treat_right_bg {float:right; height:50%; width:50%; text-align:center;}
-#treatment .treat_bottom_left_bg {border-right:1px solid #FFFFFF; float:left; height:50%; margin:0 0 0 -1px; width:50%; text-align:center;}
-#treatment .treat_bottom_right_bg {float:right; height:50%; width:50%; text-align:center;}
-#treatment #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:36px; display:inline-block; margin-top:22%; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
+#offerings .treat_left_bg, #offerings .treat_center_left_bg, #offerings .treat_bottom_left_bg {border-right:1px solid #FFFFFF; float:left; height:33%; margin:0 0 0 -1px; width:50%; text-align:center;}
+#offerings .treat_right_bg, #offerings .treat_center_right_bg, #offerings .treat_bottom_right_bg  {float:right; height:33%; width:50%; text-align:center;}
+#offerings .treat_bottom_left_bg, #offerings .treat_bottom_right_bg {height:34% !important;}
+#offerings #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:36px; display:inline-block; margin-top:12%; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
 
 .treat-links-cont {float:left; margin:50px 0 70px 0; width:100%;}
 .treat-links-cont li {display:inline-block;; margin-left:10px;}
