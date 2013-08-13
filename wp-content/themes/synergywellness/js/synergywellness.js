@@ -123,6 +123,7 @@ function callAnystretch() {
 	//$('#practitioners .page-img').anystretch("/wp-content/uploads/2013/02/bio_slide.jpg", {speed: 0});
 }
 
+
 function resizeImg() {
 var pageH = $(document).height();
 var imgH = pageH - 254 +'px';
