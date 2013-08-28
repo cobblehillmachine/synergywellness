@@ -110,12 +110,12 @@ function callAnystretch() {
 	$('#practitioners .page-img').anystretch("/wp-content/themes/synergywellness/images/bio_slide.jpg", {speed: 0});
 	$('#pricing .page-img').anystretch("/wp-content/themes/synergywellness/images/pricing_slide.jpg", {speed: 0});
 	$('#contact .page-img').anystretch("/wp-content/themes/synergywellness/images/contact_slide.jpg", {speed: 0});
-	$('.treat_left_bg').anystretch("/wp-content/themes/synergywellness/images/new_colon.jpg", {speed: 0});
-	$('.treat_center_left_bg').anystretch("/wp-content/themes/synergywellness/images/thai_slide.jpg", {speed: 0});
-	$('.treat_center_right_bg').anystretch("/wp-content/themes/synergywellness/images/sugaring.jpg", {speed: 0});
-	$('.treat_right_bg').anystretch("/wp-content/themes/synergywellness/images/naturo.jpg", {speed: 0});
-	$('.treat_bottom_left_bg').anystretch("/wp-content/themes/synergywellness/images/sauna.jpg", {speed: 0});
-	$('.treat_bottom_right_bg').anystretch("/wp-content/themes/synergywellness/images/kangen.jpg", {speed: 0});
+	//$('.treat_left_bg').anystretch("/wp-content/themes/synergywellness/images/new_colon.jpg", {speed: 0});
+	//$('.treat_center_left_bg').anystretch("/wp-content/themes/synergywellness/images/thai_slide.jpg", {speed: 0});
+	//$('.treat_center_right_bg').anystretch("/wp-content/themes/synergywellness/images/sugaring.jpg", {speed: 0});
+	//$('.treat_right_bg').anystretch("/wp-content/themes/synergywellness/images/naturo.jpg", {speed: 0});
+	//$('.treat_bottom_left_bg').anystretch("/wp-content/themes/synergywellness/images/sauna.jpg", {speed: 0});
+	//$('.treat_bottom_right_bg').anystretch("/wp-content/themes/synergywellness/images/kangen.jpg", {speed: 0});
 	$('#therapeutic-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/thai_slide.jpg", {speed: 0});
 	// $('#thai-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/thai_slide.jpg", {speed: 0});
 	$('.page-id-16 .page-img').anystretch("/wp-content/themes/synergywellness/images/sugaring.jpg", {speed: 0});

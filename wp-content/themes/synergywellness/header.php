@@ -92,12 +92,12 @@
 			<div class="home_slide"></div>
 		
 		<?php elseif (is_page(11)) : ?>	
-			<div class="treat_left_bg"><a href="/colon-hydrotherapy">Colon Hydrotherapy</a></div>
-			<div class="treat_right_bg"><a href="http://ecohealthwellness.com/wp/" target="_blank">Naturopathic Medicine</a></div>
-			<div class="treat_center_left_bg"><a href="/therapeutic-massage">Therapeutic Massage</a></div>
-			<div class="treat_center_right_bg"><a href="/sugaring">Sugaring and Facials</a></div>
-			<div class="treat_bottom_left_bg"><a href="http://www.sunlighten.com/mpulse-believe-3D.html" target="_blank">Infrared Sauna</a></div>
-			<div class="treat_bottom_right_bg"><a href="http://www.enagic.com/watertheory.php" target="_blank">Kangen Water</a></div>
+			<div class="treat_left_bg treatment-box"><a href="/colon-hydrotherapy">Colon Hydrotherapy</a></div>
+			<div class="treat_right_bg treatment-box"><a href="http://ecohealthwellness.com/wp/" target="_blank">Naturopathic Medicine</a></div>
+			<div class="treat_center_left_bg treatment-box"><a href="/therapeutic-massage">Therapeutic Massage</a></div>
+			<div class="treat_center_right_bg treatment-box"><a href="/sugaring">Sugaring and Facials</a></div>
+			<div class="treat_bottom_left_bg treatment-box"><a href="http://www.sunlighten.com/mpulse-believe-3D.html" target="_blank">Infrared Sauna</a></div>
+			<div class="treat_bottom_right_bg treatment-box"><a href="http://www.enagic.com/watertheory.php" target="_blank">Kangen Water</a></div>
 			
 		<?php else: ?>
 			<div class="page-img" ><!-- <?php// the_post_thumbnail('full'); ?> --></div>			

@@ -66,11 +66,12 @@ a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 #signup-cont .mc_success_msg {margin:-45px 0 0 10px; color:#00AEDB !important;}
 
 /*TREATMENT*/
-#offerings .treat_left_bg, #offerings .treat_center_left_bg, #offerings .treat_bottom_left_bg {border-right:1px solid #FFFFFF; float:left; height:33%; margin:0 0 0 -1px; width:50%; text-align:center;}
-#offerings .treat_right_bg, #offerings .treat_center_right_bg, #offerings .treat_bottom_right_bg  {float:right; height:33%; width:50%; text-align:center;}
-#offerings .treat_bottom_left_bg, #offerings .treat_bottom_right_bg {height:34% !important;}
-#offerings #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:36px; display:inline-block; margin-top:12%; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
-
+.treatment-box {border-bottom:1px solid #fff; float:left; width:50%; height:300px; text-align:center; margin:0 0 0 -1px; border-right:1px solid #fff;}
+/*#offerings .treat_left_bg, #offerings .treat_center_left_bg, #offerings .treat_bottom_left_bg {border-right:1px solid #FFFFFF; float:left; height:33%; margin:0 0 0 -1px; width:50%; text-align:center;}
+#offerings .treat_right_bg, #offerings .treat_center_right_bg, #offerings .treat_bottom_right_bg  {float:right; height:33%; width:50%; text-align:center;}*/
+/*#offerings .treat_bottom_left_bg, #offerings .treat_bottom_right_bg {height:34% !important;}*/
+#offerings #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:36px; display:inline-block; margin-top:125px; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
+#offerings #main-cont a:hover {text-decoration:none;}
 .treat-links-cont {float:left; margin:50px 0 70px 0; width:100%;}
 .treat-links-cont li {display:inline-block;; margin-left:10px;}
 .treat-links-cont a {margin-right:30px; text-transform:uppercase; color:#888; text-decoration:none;}
