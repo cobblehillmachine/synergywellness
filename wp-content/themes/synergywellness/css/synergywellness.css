@@ -15,9 +15,9 @@ a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 .content p {margin:0 auto; opacity:0.9; padding:0 0 15px; width:75%;}
 .content h3 {text-transform:uppercase; font-weight:normal;}
 #practitioners h2 {margin-top:80px;}
-#meddicupping .page-img {display:none;}
-#meddicupping .content {width:100%;}
-#meddicupping .content p {text-align:justify;}
+#medicupping .page-img {display:none;}
+#medicupping .content {width:100%;}
+#medicupping .content p {text-align:justify;}
 
 /*FONTS*/
 .futura-light {font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 300;}
