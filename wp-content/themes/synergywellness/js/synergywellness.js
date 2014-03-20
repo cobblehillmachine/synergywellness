@@ -120,7 +120,7 @@ function callAnystretch() {
 	// $('#thai-massage .page-img').anystretch("/wp-content/themes/synergywellness/images/thai_slide.jpg", {speed: 0});
 	$('.page-id-16 .page-img').anystretch("/wp-content/themes/synergywellness/images/sugaring.jpg", {speed: 0});
 	$('#colon-hydrotherapy .page-img').anystretch("/wp-content/themes/synergywellness/images/colon_slide.jpg", {speed: 0});
-	//$('#practitioners .page-img').anystretch("/wp-content/uploads/2013/02/bio_slide.jpg", {speed: 0});
+	// $('#meddicupping .page-img').anystretch("/wp-content/themes/synergywellness/images/bio_slide.jpg", {speed: 0});
 }
 
 
