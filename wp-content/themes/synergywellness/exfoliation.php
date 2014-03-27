@@ -5,6 +5,7 @@
 get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
+<div class="page-img" ><?php the_post_thumbnail('full'); ?></div>
 <div class="content">
 	<div class="treat-links-cont">
 		<?php wp_nav_menu( array('menu' => 'treatments' )); ?>

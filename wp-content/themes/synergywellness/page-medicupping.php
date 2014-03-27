@@ -1,7 +1,7 @@
 <?php
 
 get_header(); ?>
-
+<div class="mid-cont">
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="content">
 	<div class="treat-links-cont">
@@ -11,6 +11,6 @@ get_header(); ?>
 	<?php the_content(); ?>
 </div>
 <?php endwhile; ?>
-
+</div>
 
 <?php get_footer(); ?>

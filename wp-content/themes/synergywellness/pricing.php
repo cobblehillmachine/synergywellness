@@ -3,7 +3,6 @@
 // Template Name: Pricing
 
 get_header(); ?>
-
 <div class="content">
 	<div class="page-title"><?php the_title(); ?></div>
 	<?php $subs = new WP_Query( array( 'post_parent' => $post->ID, 'post_type' => 'page', 'orderby' => 'menu_order', 'order' => 'ASC', 'posts_per_page' => 20 ));

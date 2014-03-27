@@ -53,9 +53,11 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/synergywellness.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/css/flexslider.css" />
 <!-- <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" /> -->
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider.js"></script>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/synergywellness.js"></script>
 
 <!--[if lt IE 9]>
@@ -78,38 +80,26 @@
 </head>
 
 <body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
+	<div id="gift-form">
+		<div id="close" onclick="hideGiftform();" >X</div>
+		<div class="info">
+			Please fill out the information below and Jennifer will get in touch with you within 24 hours to deliver the gift certificate.
+		</div>
+		<?php echo do_shortcode('[contact-form-7 id="97" title="Gift certificate"]'); ?>
+	</div>
+	<div class="overlay"></div>
 	<?php if (is_front_page()) : ?><div id="loader"></div><?php endif; ?>
 	<div id="header">
-		<div id="gift-link" onclick="showGiftform();">gift certificates</div>
-		<a id="signup-link" href="/contact/#mc_signup">Signup for our Newsletter</a>
+		<div id="top-links">
+			<div id="gift-link" onclick="showGiftform();">gift certificates</div>
+			<a id="signup-link" href="/contact/#mc_signup">Signup for our Newsletter</a>
+		</div>
 		<div class="mid-cont">
 			<a href="/" id="logo"></a>
 			<div id="nav"><?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?></div>
 		</div>
 	</div>
 	<div id="main-cont">
-		<?php if (is_front_page()) : ?>
-			<div class="home_slide"></div>
-		
-		<?php elseif (is_page(11)) : ?>	
-			<div class="treat_left_bg treatment-box"><a href="/colon-hydrotherapy">Colon Hydrotherapy</a></div>
-			<!-- <div class="treat_right_bg treatment-box"><a href="http://ecohealthwellness.com/wp/" target="_blank">Naturopathic Medicine</a></div> -->
-			<div class="treat_right_bg treatment-box"><a href="/medicupping">Medicupping</a></div>
-			<div class="treat_center_left_bg treatment-box"><a href="/therapeutic-massage">Therapeutic Massage</a></div>
-			<div class="treat_center_right_bg treatment-box"><a href="/sugaring">Sugaring and Facials</a></div>
-			
-			<!-- <div class="treat_bottom_right_bg treatment-box"><a href="http://www.enagic.com/watertheory.php" target="_blank">Kangen Water</a></div> -->
-			
-		<?php else: ?>
-			<div class="page-img" ><!-- <?php// the_post_thumbnail('full'); ?> --></div>			
-		<?php endif; ?>
-
+	
 				
-<div id="gift-form">
-	<div id="close" onclick="hideGiftform();" >X</div>
-	<div class="info">
-		Please fill out the information below and Jennifer will get in touch with you within 24 hours to deliver the gift certificate.
-	</div>
-	<?php echo do_shortcode('[contact-form-7 id="97" title="Gift certificate"]'); ?>
-</div>
-<div class="overlay"></div>
+

@@ -1,14 +1,14 @@
 $(document).ready(function() {
 	var pageH = $(document).height();
-	var pageImg = $('.page-img img');
-	var bodyW = $('body').width();
+	// var pageImg = $('.page-img img');
+	// var bodyW = $('body').width();
 	window.scrollTo(0, 1);
-	centerItem('#gift-form', 350, 700);
+	centerItem('#gift-form', 285, 700);
 	setInputFieldFunctions();
 	showSubnav();
-	homeSlide();
-	resizePage();
-	callAnystretch();
+	//homeSlide();
+	//resizePage();
+	//callAnystretch();
 	//resizeImg();
 	$('#loader').css({height: pageH});
 	$('#loader').delay(1000).fadeOut('slow');
@@ -18,28 +18,33 @@ $(document).ready(function() {
 	// else if(bodyW > 1120) {
 	// 	$('.content #swedish').css({marginLeft: 25 +'%'});
 	// }
+	//sliderHeight();
+	$('.flexslider').flexslider();
+	$('#home-slider .flex-control-nav, #home-slider .flex-direction-nav').remove();
 	
 
 });
 
 $(window).resize(function() {
-	var bodyW = $('body').width();
-	resizePage();
-	callAnystretch();
+	// var bodyW = $('body').width();
+	// 	resizePage();
+	// 	callAnystretch();
 	// if(bodyW < 1150) {
 	// 	$('.content #swedish').css({marginLeft: 14 +'%'});
 	// } 
 	// else if(bodyW > 1150) {
 	// 	$('.content #swedish').css({marginLeft: 25 +'%'});
 	// }
-	centerItem('#gift-form', 350, 700);
+	centerItem('#gift-form', 285, 700);
 	//resizeImg();
+	//sliderHeight();
 });
 
 $(window).load(function() {
-	callAnystretch();
-	resizePage();
+	// callAnystretch();
+	// 	resizePage();
 	//resizeImg();
+	$('.flexslider').flexslider();
 });
 
 function setInputFieldFunctions(){
@@ -59,9 +64,11 @@ $('.form-input').each(function(){
 }
 
 function showSubnav() {
-	$('#menu-item-34').live({
-		mouseenter: function(){$('.sub-menu').show();},
-		mouseleave: function(){$('.sub-menu').hide();}
+	$('#header .menu-item').each(function() {
+		$(this).on({
+			mouseenter: function(){$(this).children('.sub-menu').show();},
+			mouseleave: function(){$(this).children('.sub-menu').hide();}
+		});
 	});
 }
 
@@ -155,4 +162,17 @@ function centerItem(item,iWidth,iHeight){
    });   
 }
 
+function sliderHeight() {
+	var winH = $(document).height();
+	var slideH = winH - 254;
+	
+	$('#home-slider .slides li').each(function() {
+		$(this).css({'height': slideH});
+	});
+}
 
+function contHeight() {
+	var winH = $(document).height();
+	var contH = winH - 291;
+$('#offerings .main-cont').css({'height':contH});
+}

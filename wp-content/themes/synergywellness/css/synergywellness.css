@@ -1,14 +1,17 @@
-body {margin:0; padding:0; width:100%; height:100%; overflow:auto; font:normal 18px "adobe-caslon-pro"; font-weight:400; min-width:1005px; color:#888888;  background:url(../images/blue_noise.jpg) repeat;}
+body {margin:0; padding:0; width:100%; height:100%; overflow:auto; font:normal 18px "adobe-caslon-pro"; font-weight:400; min-width:320px; color:#888888;  background:url(../images/blue_noise.jpg) repeat;}
 a img {border:none;}
 ul {margin:0; padding:0; list-style:none;}
+* {box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+*:focus {outline:none;}
+img {vertical-align:top;}
 input {-webkit-appearance: none;}
-.mid-cont {position:relative; width:900px; margin:auto;}
+.mid-cont {position:relative; width:90%; margin:auto; max-width:1000px;}
 a {color:#00AEDB; text-decoration:none;}
 a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 #loader {background:url("../images/loading.png") no-repeat scroll center center #FFFFFF; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: 9000;}
 #main-cont {float:left; width:100%;}
 .page-img, .home-img {float:left; width:40%; height:100%;  background-size:cover !important;}
-.page-img img, .home-img img {width:100%; height:100%;}
+.page-img img, .home-img img {width:100%; height:auto;}
 .home-img  {width:100% !important;}
 .content {float:left; width:60%; color:#666; text-align:center;}
 .content h2, #pricing .page-title {background:url("../images/border_lg.png") no-repeat center bottom; font-style:italic; font-size:26px; font-weight:normal; display:inline-block; margin:0px auto 25px; opacity:0.9; filter:opacity(90); padding-bottom:10px; text-transform:uppercase; width:75%;}
@@ -16,31 +19,38 @@ a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 .content h3 {text-transform:uppercase; font-weight:normal;}
 #practitioners h2 {margin-top:80px;}
 #medicupping .page-img {display:none;}
-#medicupping .content {width:100%;}
-#medicupping .content p {text-align:justify;}
+#medicupping .content, #contact .content {width:100%;}
+
+#content .content-bios {float:left; width:100%; padding:35px;}
 
 /*FONTS*/
 .futura-light {font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 300;}
 .futura-book {font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 400;}
 	
 /*HEADER*/
-#header {float:left; border-bottom: 2px solid #40B6DF;height:220px; padding:12px 0 20px; width:100%; background:#fff;}
+#header {float:left; border-bottom: 3px solid #40B6DF; padding:20px 0; width:100%; background:#fff;}
 #header #gift-link, #header #signup-link {float:right; text-transform:uppercase; font-size:11px; margin-right:40px; cursor:pointer; text-decoration:none; color:#888888;}
-#header #logo {float:left; background:url(../images/logo.jpg) no-repeat; width:295px; height:154px; margin-left:325px; background-size:285px;}
+#header #logo {background:url(../images/logo.jpg) no-repeat; width:275px; height:125px; display:inline-block; background-size:275px; margin-top:35px;}
 #header #logo:hover {/*background-size:252px;*/transform: scale(1.02) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);}
-#header #nav {float:left; width:100%; margin-top:35px;}
-#header #nav li {float:left; margin:0 40px 0 80px;}
+#header #nav {display:inline-block; width:100%; margin-top:30px;}
+#header #nav li {float:left; width:25%;}
 #header #nav a {color:#888888; text-decoration:none; text-transform:uppercase; font:normal 17px "futura-pt"; font-weight: 400; letter-spacing:2px;}
 #header #nav li a:hover, #header #nav .current-menu-item a, #header #nav .current-page-ancestor a, #header #gift-link:hover {color:#00AEDB;}
-#header #nav .sub-menu {display:none; left:260px; background: url("../images/blue_swatch.png") repeat scroll; position:absolute; width:180px; padding:5px 0; z-index:10;}
-#header #nav .sub-menu li {float:left; width:100%; font-size:14px; margin:0; padding-left:15px;}
-#header #nav .sub-menu a {color:#8D8576; text-transform:capitalize; font-size:14px;}
+#header #nav .sub-menu {display:none; background: url("../images/blue_swatch.png") repeat scroll; position:absolute; width:210px; padding:10px 0 10px 20px; z-index:10; margin-left:40px; text-align:left;}
+#header #nav .sub-menu li {float:left; width:100%; margin:0 0 5px 0;}
+#header #nav .sub-menu a {color:#8D8576; text-transform:capitalize; font-size:15px;}
 
+#header #top-links {position:absolute; right:0; z-index:10;}
+#header .mid-cont {text-align:center;}
 
 /*HOMEPAGE*/
 .main-img {float:left; width:100%; height:400px; background-size:cover !important;}
 #site-credit {position:absolute; bottom:20px; right:50px; color:#fff; text-decoration:none; text-shadow:0 1px 2px #000000; font-size:16px;}
 #site-credit:hover {color:#EFEFEF;}
+
+#home-slider {float:left; width:100%;}
+#home-slider .banner {background-size:cover; width:100%; position:absolute; display:none; }
+#home-slider .flexslider .slides img {width:100%; height:auto;}
 
 /*PRICING*/
 #pricing .page-title, #pricing .content #schedule h2 {color:#fff; font-size:26px !important; padding-top:0px !important; margin-top:45px;}
@@ -59,7 +69,7 @@ a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 #address-cont {margin-top:110px; line-height:30px;}
 #address-cont a {color:#00AEDB; text-decoration:none;}
 #address-cont a:hover {text-decoration:underline;}
-#map-wrap {background:#fff; padding:10px; border:#ccc; width:325px; height:225px;;}
+#map-wrap {background:#fff; padding:10px; border:#ccc; width:345px; height:245px;;}
 #map_canvas {float:left; width:325px; height:225px;}
 #signup-cont {margin-bottom:35px !important;}
 #signup-cont h3 {font-size:14px; margin:auto; width:75%; text-align:left; margin-bottom:12px;}
@@ -73,7 +83,7 @@ a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 /*#offerings .treat_left_bg, #offerings .treat_center_left_bg, #offerings .treat_bottom_left_bg {border-right:1px solid #FFFFFF; float:left; height:33%; margin:0 0 0 -1px; width:50%; text-align:center;}
 #offerings .treat_right_bg, #offerings .treat_center_right_bg, #offerings .treat_bottom_right_bg  {float:right; height:33%; width:50%; text-align:center;}*/
 /*#offerings .treat_bottom_left_bg, #offerings .treat_bottom_right_bg {height:34% !important;}*/
-#offerings #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:36px; display:inline-block; margin-top:125px; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
+#offerings #main-cont a {color:#fff; text-decoration:none; text-transform:uppercase; font-size:30px; display:inline-block; margin:100px 0; background: url("../images/border_lg.png") no-repeat scroll center bottom transparent;}
 #offerings #main-cont a:hover {text-decoration:none;}
 .treat-links-cont {float:left; margin:50px 0 70px 0; width:100%;}
 .treat-links-cont li {display:inline-block;; margin-left:10px;}
@@ -85,6 +95,8 @@ a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 #colon-hydrotherapy #quote-cont {padding:30px 40px; background:#9ccfdb; width:85%; margin:0 auto 25px; text-align:left;}
 #colon-hydrotherapy #quote-cont p {font-size:18px; font-style:italic; width:100%;}
 #colon-hydrotherapy #quote-cont span {margin:auto; width:100%;}
+
+#colon-hydrotherapy .content, #pricing .content {width:100%;}
 
 /*FORM*/
 #form-cont, #signup-cont {float:left; width:100%; margin:auto; margin-top:50px;}
@@ -100,13 +112,15 @@ border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px; backgrou
 .form-label {float:left; text-transform:uppercase; font-size:14px; font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 400; margin-left:2px;}
 
 /*GIFT CERTIFICATE*/
-#gift-form {display:none; position:absolute; top:50px; margin:auto; z-index:100; width:250px; background:#fff; padding:40px; border:1px solid #ccc; border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;}
+#gift-form {display:none; position:absolute; top:50px; margin:auto; z-index:100; width:285px; background:#fff; padding:40px; border:1px solid #ccc; border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;}
 .overlay {position:absolute; width:100%; height:100%; top:0; left:0; background:#fff; opacity:.7; filter:alpha(opacity=70); z-index:50; display:none;}
 #close {position:absolute; right:12px; top:12px; font:normal 12px Arial; padding:2px 5px; border:1px solid #ccc; cursor:pointer;}
 #gift-form .info {font-size:14px; margin-bottom:15px;}
 
 
-@media screen and (max-device-width: 320px) {
+#offerings .offering-box {float:left; width:50%; text-align:center;}
+
+/*@media screen and (max-device-width: 320px) {
 body {min-height:1200px;}
 #header #nav li {margin-left:80px;}
 #loader {display:none !important;}
@@ -116,10 +130,10 @@ body {min-height:1200px;}
 #map-wrap, #map_canvas {width:300px; height:200px;}
 .overlay {width:1005px;}
 #gift-form {top:100px !important; left:350px !important;}
-}
+}*/
 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
 body {min-height:700px;}
 #header #nav li {margin-left:80px;}
 #loader {display:none !important;}
@@ -133,7 +147,7 @@ body {min-height:700px;}
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
 body {min-height:1200px;}
-#header #nav li {margin-left:80px;}
+
 #loader {display:none !important;}
 #pricing #swedish.pricing-cont {margin-left:7% !important;}
 .home_slide, .home_slide img {height:1000px !important;}
@@ -142,9 +156,26 @@ body {min-height:1200px;}
 .overlay {width:1005px;}
 #gift-form {top:100px !important; left:350px !important;}
 }
+*/
 
+@media screen and (max-width:1200px) {
+	#main-cont .page-img {display:none;}
+	#main-cont .content {width:100%;}
+	#offerings #main-cont a {font-size:22px;}
+}
 
-
+@media screen and (max-width:767px) {
+	#header #nav li {width:100%; margin-bottom:20px;}
+	#content .content-bios {padding:20px;}
+	#header #nav .sub-menu {position:relative; float:left; width:100%; margin:0; padding:0; text-align:center;}
+	#address-cont, #map-cont, #form-cont, #signup-cont {float:left; width:100%; text-align:center;}
+	#map-wrap {display:inline-block;}
+	#contact #form-cont input, #contact #form-cont textarea, #form-cont form, #form-cont .input-cont, #form-cont .input-cont p, #map_canvas, #map-wrap, #signup-cont #mc_signup_form, #signup-cont h3, #signup-cont input  {width:100%;}
+	#contact .mc_signup_submit {float:left; width:100%;}
+	#signup-cont h3 {font-size:13px;}
+	.content p  {width:90%;}
+	#offerings #main-cont a {width:100%; margin:45px 0; font-size:18px;}
+}
 
 
 
