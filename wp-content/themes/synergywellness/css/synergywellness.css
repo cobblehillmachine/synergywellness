@@ -74,9 +74,12 @@ a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 #signup-cont {margin-bottom:35px !important;}
 #signup-cont h3 {font-size:14px; margin:auto; width:75%; text-align:left; margin-bottom:12px;}
 #signup-cont #mc_signup_form {background:none; border:none; padding:0; width:75%; margin:auto;}
-#signup-cont .mc_signup_submit {float:left; margin-top:7px;}
+#signup-cont .mc_signup_submit {float:left; width: 100px !important; margin-top: 0 !important;}
+#mc_signup_submit {	margin-top: 0 !important; width: 100px !important}
 #signup-cont #mc_message {position:absolute; text-align:left; font:normal 14px "adobe-caslon-pro"; margin:65px 0 0 5px;}
 #signup-cont .mc_success_msg {margin:-45px 0 0 10px; color:#00AEDB !important;}
+#signup-cont .mergeRow {	display: none;}
+#signup-cont .mc_merge_var label {	display: none;}
 
 /*TREATMENT*/
 .treatment-box {border-bottom:1px solid #fff; float:left; width:50%; height:300px; text-align:center; margin:0 0 0 -1px; border-right:1px solid #fff;}
@@ -102,7 +105,7 @@ a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 #form-cont, #signup-cont {float:left; width:100%; margin:auto; margin-top:50px;}
 #form-cont .input-cont {float:left;}
 #form-cont .input-cont p {margin:0;}
-.form-input, #form-cont .input-cont textarea {float:left; height:45px; padding:5px 5px 0 10px; border:4px solid #EBEBEB; width:200px; background:#F0DDDD; margin:0 15px 20px 0; 
+.input-cont input, #form-cont .input-cont textarea, #signup-cont input[type='text'] {float:left; height:45px; padding:5px 5px 0 10px; border:4px solid #EBEBEB; width:200px; background:#F0DDDD; margin:0 15px 20px 0; 
 	border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px; color:#666; font:normal 14px "adobe-caslon-pro";}
 #form-cont .input-cont textarea {resize:none; width:438px; height:120px; padding-top:15px;}
 .submit-btn {float:left; width:100%; text-align:left;}
@@ -110,6 +113,7 @@ a:hover, #offerings #main-cont a:hover {text-decoration:underline;}
 border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px; background:#EBEBEB; cursor:pointer;}
 #form-cont form {width:75%; margin:auto;}
 .form-label {float:left; text-transform:uppercase; font-size:14px; font-family: "futura-pt",sans-serif; font-style: normal; font-weight: 400; margin-left:2px;}
+div.wpcf7-response-output {	float: left;}
 
 /*GIFT CERTIFICATE*/
 #gift-form {display:none; position:absolute; top:50px; margin:auto; z-index:100; width:285px; background:#fff; padding:40px; border:1px solid #ccc; border-radius:7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;}
